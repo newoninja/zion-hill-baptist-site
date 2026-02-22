@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sermon Archive | Zion Hill Baptist Church</title>
+  <meta name="description" content="Listen to sermons from Zion Hill Baptist Church with a simple audio archive.">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="site-topbar">
+    <strong>Sermon Archive:</strong> Easy audio playback for members at home and on the go.
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <p class="brand-name">Zion Hill Baptist Church</p>
+        <p class="brand-subtitle">Sermon Archive</p>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="visit.html">Plan Your Visit</a></li>
+          <li><a class="nav-link" href="history.html">Our History</a></li>
+          <li><a class="nav-link" href="beliefs.html">What We Believe</a></li>
+          <li><a class="nav-link" href="sermons.html">Sermons</a></li>
+          <li><a class="nav-link" href="leadership.html">Leadership</a></li>
+          <li><a class="nav-link" href="give.html">Give</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero hero-mountains">
+      <div class="hero-content reveal">
+        <span class="hero-tag">Audio Messages</span>
+        <h2>Listen to Recent Preaching</h2>
+        <p>
+          This archive is built for simple, reliable listening across phones, tablets, and desktop.
+          New MP3 messages can be added anytime.
+        </p>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <h2 class="section-title">Recent Sermons</h2>
+      <p class="section-subtitle">Tap play to listen. Download links can be added below each message as needed.</p>
+      <div class="card-grid">
+        <article class="card sermon-card">
+          <h3>Walking by Faith</h3>
+          <p class="meta">Morning Worship • February 15, 2026 • Pastor Blair Stewart</p>
+          <audio controls preload="none">
+            <source src="assets/sermons/sample-message.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </article>
+
+        <article class="card sermon-card">
+          <h3>The Old Paths</h3>
+          <p class="meta">WHKP Radio Ministry • February 8, 2026 • Pastor Blair Stewart</p>
+          <audio controls preload="none">
+            <source src="assets/sermons/sample-message.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </article>
+
+        <article class="card sermon-card">
+          <h3>Psalm 23: The Shepherd and His Sheep</h3>
+          <p class="meta">Sunday School • February 1, 2026</p>
+          <p class="notice">MP3 coming soon. Upload new files to <code>assets/sermons/</code> and replace this note with an audio player.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="panel">
+        <h2 class="section-title">How to Add New Sermons</h2>
+        <ol>
+          <li>Place each MP3 in <code>assets/sermons/</code>.</li>
+          <li>Duplicate a sermon card in this file and update title, date, and preacher.</li>
+          <li>Set the <code>src</code> in the <code>&lt;audio&gt;</code> element to your new file.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <strong>Zion Hill Baptist Church</strong>
+      <span>58 Zion Hill Rd, Zirconia, NC 28790</span>
+      <span>Phone: <a href="tel:+18286924544">(828) 692-4544</a></span>
+      <div class="footer-actions">
+        <a href="visit.html">Plan Your Visit</a>
+        <a href="beliefs.html">What We Believe</a>
+        <a href="give.html">Give Securely</a>
+      </div>
+      <small>© <span data-year></span> Zion Hill Baptist Church. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <div class="mobile-actions" aria-label="Quick mobile actions">
+    <a href="tel:+18286924544">Call</a>
+    <a href="https://maps.google.com/?q=58+Zion+Hill+Rd,+Zirconia,+NC+28790" target="_blank" rel="noopener">Directions</a>
+    <a href="give.html">Give</a>
+  </div>
+</body>
+</html>
