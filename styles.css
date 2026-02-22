@@ -469,6 +469,10 @@ a {
   box-shadow: var(--shadow-card);
 }
 
+.panel-fit {
+  align-self: start;
+}
+
 .card p,
 .panel p,
 .timeline-item p,
