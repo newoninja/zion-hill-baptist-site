@@ -4,31 +4,44 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Plan Your Visit | Zion Hill Baptist Church</title>
-  <meta name="description" content="Visit Zion Hill Baptist Church in Zirconia, NC. Service times, directions, and what to expect.">
+  <meta name="description" content="Plan your visit to Zion Hill Baptist Church in Zirconia, NC. Find directions, service times, what to expect, and first-time guest details.">
+  <link rel="canonical" href="https://zionhillbaptist.netlify.app/visit.html">
+  <meta property="og:title" content="Plan Your Visit | Zion Hill Baptist Church">
+  <meta property="og:description" content="Service times, directions, and what to expect at Zion Hill Baptist Church.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zionhillbaptist.netlify.app/visit.html">
+  <meta property="og:image" content="https://zionhillbaptist.netlify.app/assets/images/church-exterior.jpg">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
-  <div class="site-topbar">
-    <strong>Need help finding us?</strong> Tap <strong>Call</strong> or <strong>Directions</strong> below.
-  </div>
+  <div class="site-topbar"><strong>Need help finding us?</strong> Tap Call or Directions any time from your phone.</div>
 
   <header class="site-header">
-    <div class="header-inner">
+    <div class="container header-shell">
       <a class="brand" href="index.html">
-        <p class="brand-name">Zion Hill Baptist Church</p>
-        <p class="brand-subtitle">Plan Your Visit</p>
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>
+          <span class="brand-title">Zion Hill Baptist Church</span>
+          <span class="brand-tag">Traditional Worship in the Blue Ridge</span>
+        </span>
       </a>
-      <nav aria-label="Primary navigation">
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false" data-menu-toggle>Menu</button>
+      <nav class="site-nav" id="primary-nav" aria-label="Primary navigation" data-open="false">
         <ul class="nav-list">
           <li><a class="nav-link" href="index.html">Home</a></li>
-          <li><a class="nav-link" href="visit.html">Plan Your Visit</a></li>
-          <li><a class="nav-link" href="history.html">Our History</a></li>
-          <li><a class="nav-link" href="beliefs.html">What We Believe</a></li>
+          <li><a class="nav-link" href="visit.html">Visit Us</a></li>
+          <li><a class="nav-link" href="history.html">Our Story</a></li>
+          <li><a class="nav-link" href="beliefs.html">Beliefs</a></li>
           <li><a class="nav-link" href="sermons.html">Sermons</a></li>
-          <li><a class="nav-link" href="leadership.html">Leadership</a></li>
-          <li><a class="nav-link" href="give.html">Give</a></li>
+          <li><a class="nav-link" href="events.html">Events</a></li>
+          <li><a class="nav-link" href="radio.html">Radio</a></li>
+          <li><a class="nav-link" href="pastor.html">Pastor</a></li>
+          <li><a class="nav-link highlight" href="give.html">Give</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -36,81 +49,134 @@
 
   <main id="main-content">
     <section class="hero hero-mountains">
-      <div class="hero-content reveal">
-        <span class="hero-tag">We Would Love To Meet You</span>
-        <h2>Visit Zion Hill This Sunday</h2>
-        <p>
-          Come as you are and worship with us in a traditional, Bible-centered service.
-          You will find familiar hymns, heartfelt fellowship, and preaching from the King James Bible.
-        </p>
-        <div class="button-row">
-          <a class="btn btn-primary" href="https://maps.google.com/?q=58+Zion+Hill+Rd,+Zirconia,+NC+28790" target="_blank" rel="noopener">Get Directions</a>
-          <a class="btn btn-light" href="tel:+18286924544">Call the Church</a>
+      <div class="hero-inner reveal">
+        <div class="hero-panel">
+          <span class="hero-tag">Plan Your Visit</span>
+          <h1>We Would Love To Meet You This Sunday</h1>
+          <p>You can expect reverent congregational singing, KJV-based preaching, and a welcoming atmosphere for guests of all ages.</p>
+          <div class="button-row">
+            <a class="button primary" href="https://maps.google.com/?q=58+Zion+Hill+Rd,+Zirconia,+NC+28790" target="_blank" rel="noopener">Get Directions</a>
+            <a class="button ghost" href="tel:+18286924544">Call (828) 692-4544</a>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="split reveal">
-      <article class="panel map-panel">
-        <h2 class="section-title">When We Meet</h2>
-        <ul class="service-list" aria-label="Service schedule">
-          <li><span>Sunday School</span><span>9:45 AM</span></li>
-          <li><span>Morning Worship</span><span>11:00 AM</span></li>
-          <li><span>WHKP Radio Ministry</span><span>8:05 AM (Sunday)</span></li>
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <a href="index.html">Home</a> / <span aria-current="page">Plan Your Visit</span>
+    </nav>
+
+    <section class="section split reveal" aria-labelledby="visit-info-heading">
+      <article class="panel">
+        <h2 id="visit-info-heading">Where and When</h2>
+        <p class="section-intro">Address: 58 Zion Hill Rd, Zirconia, NC 28790</p>
+        <ul class="list-clean" aria-label="Primary service times">
+          <li><strong>Sunday School</strong><span>9:45 AM</span></li>
+          <li><strong>Morning Worship</strong><span>11:00 AM</span></li>
+          <li><strong>WHKP Broadcast</strong><span>8:05 AM Sundays</span></li>
         </ul>
-        <div class="highlight-callout" style="margin-top: 1rem;">
-          <h3>What to Expect</h3>
-          <p>Traditional KJV-based preaching, congregational singing, prayer, and a friendly church family atmosphere.</p>
+        <div class="callout" id="expectations">
+          <strong>What to Expect</strong>
+          <p>Traditional KJV preaching, congregational hymns, prayer, and warm Christian fellowship.</p>
+        </div>
+        <div class="button-row" style="margin-top: 1rem;">
+          <a class="button primary" href="contact.html">Ask a Visit Question</a>
+          <a class="button outline" href="events.html">View Weekly Events</a>
         </div>
       </article>
       <article class="panel">
-        <h2 class="section-title">Where We Are</h2>
-        <p class="section-subtitle" style="margin-top: 0;">58 Zion Hill Rd, Zirconia, NC 28790</p>
-        <iframe
-          title="Google map for Zion Hill Baptist Church"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=58+Zion+Hill+Rd,+Zirconia,+NC+28790&output=embed"></iframe>
+        <h3>Map and Directions</h3>
+        <iframe class="map-frame" title="Map to Zion Hill Baptist Church" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=58+Zion+Hill+Rd,+Zirconia,+NC+28790&output=embed"></iframe>
       </article>
     </section>
 
-    <section class="reveal">
-      <h2 class="section-title">Helpful For First-Time Guests</h2>
-      <div class="card-grid">
-        <article class="card">
-          <h3>Parking</h3>
-          <p>On-site parking is available close to the entrance for easy access.</p>
-        </article>
-        <article class="card">
-          <h3>Dress</h3>
-          <p>You will see a range of Sunday attire. We value reverence and welcome every guest warmly.</p>
-        </article>
-        <article class="card">
-          <h3>Children</h3>
-          <p>Families are welcome in Sunday School and worship services as we learn together.</p>
-        </article>
+    <section class="section reveal" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">First-Time Guest FAQ</h2>
+      <p class="section-intro">A few helpful details before your first visit.</p>
+      <div class="accordion">
+        <details class="faq-item" open>
+          <summary>What should I wear?</summary>
+          <div class="accordion-body">
+            <p>You will see a range of Sunday attire. We value reverence in worship and warmly welcome every guest.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Is there parking close to the building?</summary>
+          <div class="accordion-body">
+            <p>Yes. On-site parking is available with convenient access near the church entrance.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Are children welcome in services?</summary>
+          <div class="accordion-body">
+            <p>Absolutely. Families are welcome in Sunday School and worship services as we learn and grow together.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary>Can I listen before I attend?</summary>
+          <div class="accordion-body">
+            <p>Yes. You can hear the Sunday radio broadcast at 8:05 AM on WHKP AM 1450 / 107.7 FM and browse the sermon archive online.</p>
+          </div>
+        </details>
       </div>
-      <p class="meta-note">
-        If you have questions before visiting, please call <a href="tel:+18286924544">(828) 692-4544</a>.
-      </p>
+    </section>
+
+    <section class="section reveal" aria-labelledby="cta-heading">
+      <article class="panel">
+        <h2 id="cta-heading">Need Help Before Sunday?</h2>
+        <p class="section-intro">Call us or send a message and we will help you plan your visit with confidence.</p>
+        <div class="button-row">
+          <a class="button primary" href="tel:+18286924544">Call the Church</a>
+          <a class="button secondary" href="contact.html">Contact Form</a>
+        </div>
+      </article>
     </section>
   </main>
 
-  <footer>
-    <div class="footer-inner">
-      <strong>Zion Hill Baptist Church</strong>
-      <span>58 Zion Hill Rd, Zirconia, NC 28790</span>
-      <span>Phone: <a href="tel:+18286924544">(828) 692-4544</a></span>
-      <div class="footer-actions">
-        <a href="history.html">Our History</a>
-        <a href="beliefs.html">What We Believe</a>
-        <a href="give.html">Give Securely</a>
-      </div>
-      <small>© <span data-year></span> Zion Hill Baptist Church. All rights reserved.</small>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h2>Zion Hill Baptist Church</h2>
+        <p>Preaching the Old Paths since 1914</p>
+        <p>58 Zion Hill Rd, Zirconia, NC 28790</p>
+        <p><a href="tel:+18286924544">(828) 692-4544</a></p>
+      </section>
+      <section>
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="visit.html">Visit Us</a></li>
+          <li><a href="history.html">Our Story</a></li>
+          <li><a href="beliefs.html">Beliefs</a></li>
+          <li><a href="sermons.html">Sermons</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Service Times</h2>
+        <ul>
+          <li>Sunday School: 9:45 AM</li>
+          <li>Morning Worship: 11:00 AM</li>
+          <li>WHKP Broadcast: 8:05 AM</li>
+          <li><a href="radio.html">Radio Ministry</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Connect</h2>
+        <ul>
+          <li><a href="mailto:info@zionhillbc.org">info@zionhillbc.org</a></li>
+          <li><a href="give.html">Online Giving</a></li>
+          <li><a href="contact.html#prayer-form">Prayer Request</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="container footer-bottom">
+      <small>© <span data-year></span> Zion Hill Baptist Church • All rights reserved • Made in the Blue Ridge.</small>
+      <a href="privacy.html">Privacy Policy</a>
     </div>
   </footer>
 
-  <div class="mobile-actions" aria-label="Quick mobile actions">
+  <div class="mobile-quick-actions" aria-label="Quick mobile actions">
     <a href="tel:+18286924544">Call</a>
     <a href="https://maps.google.com/?q=58+Zion+Hill+Rd,+Zirconia,+NC+28790" target="_blank" rel="noopener">Directions</a>
     <a href="give.html">Give</a>

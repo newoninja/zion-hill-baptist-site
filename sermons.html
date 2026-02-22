@@ -4,105 +4,237 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sermon Archive | Zion Hill Baptist Church</title>
-  <meta name="description" content="Listen to sermons from Zion Hill Baptist Church with a simple audio archive.">
+  <meta name="description" content="Listen to sermon audio from Zion Hill Baptist Church. Filter by series, service type, and topic.">
+  <link rel="canonical" href="https://zionhillbaptist.netlify.app/sermons.html">
+  <meta property="og:title" content="Sermon Archive | Zion Hill Baptist Church">
+  <meta property="og:description" content="Simple, mobile-friendly sermon listening from Zion Hill Baptist Church.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zionhillbaptist.netlify.app/sermons.html">
+  <meta property="og:image" content="https://zionhillbaptist.netlify.app/assets/images/church-sanctuary.jpg">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="site.webmanifest">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AudioObject",
+      "name": "Walking by Faith",
+      "contentUrl": "https://zionhillbaptist.netlify.app/assets/sermons/sample-message.mp3",
+      "description": "Morning Worship sermon by Pastor Blair Stewart",
+      "datePublished": "2026-02-15"
+    }
+  </script>
   <script defer src="script.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
-  <div class="site-topbar">
-    <strong>Sermon Archive:</strong> Easy audio playback for members at home and on the go.
-  </div>
+  <div class="site-topbar"><strong>Sermon Archive:</strong> Listen online, on the radio, or while traveling in the mountains.</div>
 
   <header class="site-header">
-    <div class="header-inner">
+    <div class="container header-shell">
       <a class="brand" href="index.html">
-        <p class="brand-name">Zion Hill Baptist Church</p>
-        <p class="brand-subtitle">Sermon Archive</p>
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>
+          <span class="brand-title">Zion Hill Baptist Church</span>
+          <span class="brand-tag">Traditional Worship in the Blue Ridge</span>
+        </span>
       </a>
-      <nav aria-label="Primary navigation">
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-nav" aria-expanded="false" data-menu-toggle>Menu</button>
+      <nav class="site-nav" id="primary-nav" aria-label="Primary navigation" data-open="false">
         <ul class="nav-list">
           <li><a class="nav-link" href="index.html">Home</a></li>
-          <li><a class="nav-link" href="visit.html">Plan Your Visit</a></li>
-          <li><a class="nav-link" href="history.html">Our History</a></li>
-          <li><a class="nav-link" href="beliefs.html">What We Believe</a></li>
+          <li><a class="nav-link" href="visit.html">Visit Us</a></li>
+          <li><a class="nav-link" href="history.html">Our Story</a></li>
+          <li><a class="nav-link" href="beliefs.html">Beliefs</a></li>
           <li><a class="nav-link" href="sermons.html">Sermons</a></li>
-          <li><a class="nav-link" href="leadership.html">Leadership</a></li>
-          <li><a class="nav-link" href="give.html">Give</a></li>
+          <li><a class="nav-link" href="events.html">Events</a></li>
+          <li><a class="nav-link" href="radio.html">Radio</a></li>
+          <li><a class="nav-link" href="pastor.html">Pastor</a></li>
+          <li><a class="nav-link highlight" href="give.html">Give</a></li>
+          <li><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main-content">
-    <section class="hero hero-mountains">
-      <div class="hero-content reveal">
-        <span class="hero-tag">Audio Messages</span>
-        <h2>Listen to Recent Preaching</h2>
-        <p>
-          This archive is built for simple, reliable listening across phones, tablets, and desktop.
-          New MP3 messages can be added anytime.
-        </p>
+    <section class="hero hero-sanctuary">
+      <div class="hero-inner reveal">
+        <div class="hero-panel">
+          <span class="hero-tag">Audio Sermons</span>
+          <h1>Listen to Recent Preaching</h1>
+          <p>Search by title, topic, or service type. Audio automatically pauses when another message starts.</p>
+        </div>
       </div>
     </section>
 
-    <section class="reveal">
-      <h2 class="section-title">Recent Sermons</h2>
-      <p class="section-subtitle">Tap play to listen. Download links can be added below each message as needed.</p>
-      <div class="card-grid">
-        <article class="card sermon-card">
+    <nav class="breadcrumbs container" aria-label="Breadcrumb">
+      <a href="index.html">Home</a> / <span aria-current="page">Sermon Archive</span>
+    </nav>
+
+    <section class="section reveal" aria-labelledby="sermon-list-heading">
+      <h2 id="sermon-list-heading">Sermon Archive</h2>
+      <p class="section-intro">Use search and filters to quickly find messages for worship, study, or sharing.</p>
+
+      <div class="sermon-toolbar">
+        <label class="sr-only" for="sermon-search">Search sermons</label>
+        <input id="sermon-search" class="sermon-search" type="search" placeholder="Search sermons by title, topic, or service..." data-sermon-search>
+        <button class="chip active" type="button" data-sermon-filter="all">All</button>
+        <button class="chip" type="button" data-sermon-filter="morning">Morning Worship</button>
+        <button class="chip" type="button" data-sermon-filter="radio">Radio</button>
+        <button class="chip" type="button" data-sermon-filter="sunday school">Sunday School</button>
+      </div>
+
+      <div class="sermon-list">
+        <article class="sermon-item" data-title="Walking by Faith" data-tags="morning worship faith salvation pastor blair stewart">
           <h3>Walking by Faith</h3>
-          <p class="meta">Morning Worship • February 15, 2026 • Pastor Blair Stewart</p>
-          <audio controls preload="none">
+          <div class="sermon-meta">
+            <span>Morning Worship</span>
+            <span>February 15, 2026</span>
+            <span>Pastor Blair Stewart</span>
+            <span>Series: Christian Living</span>
+          </div>
+          <audio controls preload="none" id="audio-1" aria-label="Walking by Faith sermon audio">
             <source src="assets/sermons/sample-message.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
+            Your browser does not support the audio player.
           </audio>
+          <div class="audio-tools" aria-label="Audio speed controls">
+            <span>Speed:</span>
+            <button class="rate-button active" type="button" data-audio-target="audio-1" data-rate="1">1x</button>
+            <button class="rate-button" type="button" data-audio-target="audio-1" data-rate="1.25">1.25x</button>
+            <button class="rate-button" type="button" data-audio-target="audio-1" data-rate="1.5">1.5x</button>
+            <a class="scripture-link" href="assets/sermons/sample-message.mp3" download>Download MP3</a>
+          </div>
+          <p style="margin-top: 0.7rem;">Related belief: <a class="scripture-link" href="beliefs.html">The Way of Salvation</a></p>
         </article>
 
-        <article class="card sermon-card">
+        <article class="sermon-item" data-title="The Old Paths" data-tags="radio ministry old paths kjv pastor blair stewart">
           <h3>The Old Paths</h3>
-          <p class="meta">WHKP Radio Ministry • February 8, 2026 • Pastor Blair Stewart</p>
-          <audio controls preload="none">
+          <div class="sermon-meta">
+            <span>WHKP Radio</span>
+            <span>February 8, 2026</span>
+            <span>Pastor Blair Stewart</span>
+            <span>Series: Foundations</span>
+          </div>
+          <audio controls preload="none" id="audio-2" aria-label="The Old Paths sermon audio">
             <source src="assets/sermons/sample-message.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
+            Your browser does not support the audio player.
           </audio>
+          <div class="audio-tools" aria-label="Audio speed controls">
+            <span>Speed:</span>
+            <button class="rate-button active" type="button" data-audio-target="audio-2" data-rate="1">1x</button>
+            <button class="rate-button" type="button" data-audio-target="audio-2" data-rate="1.25">1.25x</button>
+            <button class="rate-button" type="button" data-audio-target="audio-2" data-rate="1.5">1.5x</button>
+            <a class="scripture-link" href="assets/sermons/sample-message.mp3" download>Download MP3</a>
+          </div>
+          <p style="margin-top: 0.7rem;">Related belief: <a class="scripture-link" href="beliefs.html">The Holy Scriptures</a></p>
         </article>
 
-        <article class="card sermon-card">
+        <article class="sermon-item" data-title="Psalm 23 The Shepherd and His Sheep" data-tags="sunday school comfort psalm 23 shepherd">
           <h3>Psalm 23: The Shepherd and His Sheep</h3>
-          <p class="meta">Sunday School • February 1, 2026</p>
-          <p class="notice">MP3 coming soon. Upload new files to <code>assets/sermons/</code> and replace this note with an audio player.</p>
+          <div class="sermon-meta">
+            <span>Sunday School</span>
+            <span>February 1, 2026</span>
+            <span>Guest Teaching</span>
+            <span>Series: Psalms</span>
+          </div>
+          <audio controls preload="none" id="audio-3" aria-label="Psalm 23 sermon audio">
+            <source src="assets/sermons/sample-message.mp3" type="audio/mpeg">
+            Your browser does not support the audio player.
+          </audio>
+          <div class="audio-tools" aria-label="Audio speed controls">
+            <span>Speed:</span>
+            <button class="rate-button active" type="button" data-audio-target="audio-3" data-rate="1">1x</button>
+            <button class="rate-button" type="button" data-audio-target="audio-3" data-rate="1.25">1.25x</button>
+            <button class="rate-button" type="button" data-audio-target="audio-3" data-rate="1.5">1.5x</button>
+            <a class="scripture-link" href="assets/sermons/sample-message.mp3" download>Download MP3</a>
+          </div>
+          <p style="margin-top: 0.7rem;">Related belief: <a class="scripture-link" href="beliefs.html">The True God</a></p>
         </article>
       </div>
+
+      <p class="no-results" data-no-sermon-results hidden>No sermons match your current search. Try clearing filters.</p>
     </section>
 
-    <section class="reveal">
-      <div class="panel">
-        <h2 class="section-title">How to Add New Sermons</h2>
-        <ol>
-          <li>Place each MP3 in <code>assets/sermons/</code>.</li>
-          <li>Duplicate a sermon card in this file and update title, date, and preacher.</li>
-          <li>Set the <code>src</code> in the <code>&lt;audio&gt;</code> element to your new file.</li>
-        </ol>
-      </div>
+    <section class="section reveal" aria-labelledby="sermon-upload-heading">
+      <article class="panel">
+        <h2 id="sermon-upload-heading">Weekly Upload Workflow</h2>
+        <div class="table-wrap">
+          <table class="schedule-table" aria-label="Sermon upload checklist">
+            <thead>
+              <tr>
+                <th>Step</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Upload MP3 files to <code>assets/sermons/</code>.</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Duplicate a sermon card and update title, date, series, and preacher.</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Set audio source path and optional download link.</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Commit changes and push to GitHub for Netlify deployment.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
     </section>
   </main>
 
-  <footer>
-    <div class="footer-inner">
-      <strong>Zion Hill Baptist Church</strong>
-      <span>58 Zion Hill Rd, Zirconia, NC 28790</span>
-      <span>Phone: <a href="tel:+18286924544">(828) 692-4544</a></span>
-      <div class="footer-actions">
-        <a href="visit.html">Plan Your Visit</a>
-        <a href="beliefs.html">What We Believe</a>
-        <a href="give.html">Give Securely</a>
-      </div>
-      <small>© <span data-year></span> Zion Hill Baptist Church. All rights reserved.</small>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section>
+        <h2>Zion Hill Baptist Church</h2>
+        <p>Preaching the Old Paths since 1914</p>
+        <p>58 Zion Hill Rd, Zirconia, NC 28790</p>
+        <p><a href="tel:+18286924544">(828) 692-4544</a></p>
+      </section>
+      <section>
+        <h2>Quick Links</h2>
+        <ul>
+          <li><a href="visit.html">Visit Us</a></li>
+          <li><a href="history.html">Our Story</a></li>
+          <li><a href="beliefs.html">Beliefs</a></li>
+          <li><a href="sermons.html">Sermons</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Service Times</h2>
+        <ul>
+          <li>Sunday School: 9:45 AM</li>
+          <li>Morning Worship: 11:00 AM</li>
+          <li>WHKP Broadcast: 8:05 AM</li>
+          <li><a href="radio.html">Radio Ministry</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Connect</h2>
+        <ul>
+          <li><a href="mailto:info@zionhillbc.org">info@zionhillbc.org</a></li>
+          <li><a href="give.html">Online Giving</a></li>
+          <li><a href="contact.html#prayer-form">Prayer Request</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="container footer-bottom">
+      <small>© <span data-year></span> Zion Hill Baptist Church • All rights reserved • Made in the Blue Ridge.</small>
+      <a href="privacy.html">Privacy Policy</a>
     </div>
   </footer>
 
-  <div class="mobile-actions" aria-label="Quick mobile actions">
+  <div class="mobile-quick-actions" aria-label="Quick mobile actions">
     <a href="tel:+18286924544">Call</a>
     <a href="https://maps.google.com/?q=58+Zion+Hill+Rd,+Zirconia,+NC+28790" target="_blank" rel="noopener">Directions</a>
     <a href="give.html">Give</a>

@@ -1,0 +1,15 @@
+{
+  "name": "Zion Hill Baptist Church",
+  "short_name": "Zion Hill",
+  "icons": [
+    {
+      "src": "/assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#1a3c34",
+  "background_color": "#f9f5ee",
+  "display": "standalone",
+  "start_url": "/"
+}

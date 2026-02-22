@@ -1,45 +1,49 @@
 # Zion Hill Baptist Church Website
 
-Static multi-page website for Zion Hill Baptist Church.
+Static multi-page church website optimized for Netlify hosting.
+
+## Stack
+
+- HTML + CSS + vanilla JavaScript
+- Netlify Forms for contact and prayer requests
+- Netlify headers/redirects via `netlify.toml`
 
 ## Local Development
-
-Run a local server from the project root:
 
 ```bash
 python3 -m http.server 8787
 ```
 
-Open:
+Open `http://localhost:8787`.
 
-- `http://localhost:8787`
+## Deployment
 
-## Netlify Deployment
-
-This project is configured for Netlify with `netlify.toml`.
-
+- Connected GitHub repository deploys from `main`
 - Publish directory: `.`
-- Build command: _(none)_
+- Build command: none
 
-### Deploy via GitHub
+## Page Structure
 
-1. Create a new GitHub repository.
-2. Push this project to `main`.
-3. In Netlify, choose **Add new site** -> **Import an existing project**.
-4. Select your GitHub repo.
-5. Keep build settings as configured by `netlify.toml` and deploy.
+- `index.html` - Home
+- `visit.html` - Plan Your Visit
+- `history.html` - Our Story
+- `beliefs.html` - Statement of Faith
+- `sermons.html` - Audio archive with filtering
+- `events.html` - Weekly schedule and upcoming highlights
+- `radio.html` - WHKP ministry details
+- `pastor.html` - Pastor bio
+- `gallery.html` - Photo gallery
+- `contact.html` - Contact + prayer forms
+- `give.html` - Online giving
+- `privacy.html` - Privacy policy
 
-### Optional: Deploy via Netlify CLI
+## Weekly Sermon Update Workflow
 
-```bash
-npm install -g netlify-cli
-netlify login
-netlify init
-netlify deploy --prod
-```
+1. Upload MP3 to `assets/sermons/`.
+2. Duplicate a sermon card in `sermons.html`.
+3. Update title/date/series and the `audio` source path.
+4. Commit and push to `main`.
 
-## Content Updates
+## Forms
 
-- Sermons: add MP3 files to `assets/sermons/`.
-- Images: replace files in `assets/images/`.
-- Pages: edit the `.html` files directly.
+Forms in `contact.html` use Netlify processing and redirect to `thanks.html`.

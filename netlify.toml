@@ -3,12 +3,17 @@
   command = ""
 
 [[redirects]]
-  from = "/visit"
-  to = "/visit.html"
-  status = 200
+  from = "/leadership"
+  to = "/pastor.html"
+  status = 301
 
 [[redirects]]
-  from = "/visit/"
+  from = "/leadership/"
+  to = "/pastor.html"
+  status = 301
+
+[[redirects]]
+  from = "/visit"
   to = "/visit.html"
   status = 200
 
@@ -18,17 +23,7 @@
   status = 200
 
 [[redirects]]
-  from = "/history/"
-  to = "/history.html"
-  status = 200
-
-[[redirects]]
   from = "/beliefs"
-  to = "/beliefs.html"
-  status = 200
-
-[[redirects]]
-  from = "/beliefs/"
   to = "/beliefs.html"
   status = 200
 
@@ -38,18 +33,28 @@
   status = 200
 
 [[redirects]]
-  from = "/sermons/"
-  to = "/sermons.html"
+  from = "/events"
+  to = "/events.html"
   status = 200
 
 [[redirects]]
-  from = "/leadership"
-  to = "/leadership.html"
+  from = "/radio"
+  to = "/radio.html"
   status = 200
 
 [[redirects]]
-  from = "/leadership/"
-  to = "/leadership.html"
+  from = "/pastor"
+  to = "/pastor.html"
+  status = 200
+
+[[redirects]]
+  from = "/gallery"
+  to = "/gallery.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
   status = 200
 
 [[redirects]]
@@ -58,8 +63,13 @@
   status = 200
 
 [[redirects]]
-  from = "/give/"
-  to = "/give.html"
+  from = "/privacy"
+  to = "/privacy.html"
+  status = 200
+
+[[redirects]]
+  from = "/thanks"
+  to = "/thanks.html"
   status = 200
 
 [[headers]]
@@ -68,6 +78,9 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
     X-Frame-Options = "SAMEORIGIN"
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; media-src 'self'; frame-src https://www.google.com https://maps.google.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'"
 
 [[headers]]
   for = "/*.html"
